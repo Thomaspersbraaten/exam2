@@ -1,0 +1,208 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid grey;
+  width: 100%;
+}
+.modal-bottom {
+  top: 50%;
+  &__body {
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+  }
+}
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+.modal-logout {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+}
+.logout-button {
+  height: 38px;
+}
+.modal-content {
+  border: none;
+  background: none;
+  align-items: center;
+  width: fit-content;
+}
+.modal-image {
+  max-height: 275px;
+}
+.modal-top {
+  background: none;
+}
+
+.my-profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.image-container {
+  position: relative;
+  margin: 0.5rem;
+}
+.profile-avatar {
+  border: 5px solid white;
+  position: absolute;
+  left: 0;
+  height: 75px;
+  width: 75px;
+  bottom: -10px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  &:hover {
+    cursor: pointer;
+    border-radius: 25%;
+  }
+}
+.profile-banner {
+  border-radius: 45px;
+  height: 175px;
+  transition: all 0.4s ease;
+  &:hover {
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+
+.modal-actions {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  &__remove {
+    color: red;
+  }
+  & p {
+    padding: 0.5rem;
+  }
+  & p:hover {
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.follow-button {
+  margin: 1rem auto 0.25rem auto;
+}
+
+// profile links
+
+.nav-item {
+  font-size: 0.9rem;
+}
+
+.profile-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+
+  & div {
+    width: 64.72px;
+  }
+
+  & div:hover {
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+// bottom container
+
+.profile-bottom-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid grey;
+  margin-top: 1.5rem;
+}
+
+.follower-container,
+.following-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.follower,
+.following {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+}
+.last-item {
+  border: none;
+}
+
+.profile-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 435px) {
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-banner {
+    height: 200px;
+  }
+  .follower-container,
+  .following-container {
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid;
+    min-width: 300px;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .profile-avatar {
+    width: 115px;
+    height: 115px;
+  }
+  .profile-banner {
+    height: 275px;
+  }
+}
+
+@media (min-height: 800px) {
+  .modal-image {
+    max-height: 365px;
+  }
+}

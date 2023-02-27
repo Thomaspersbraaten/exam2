@@ -1,0 +1,82 @@
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-logo-container {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.landing-logo {
+  width: 100%;
+  max-width: 85px;
+}
+
+.welcome-text-container {
+  text-align: center;
+  margin: 2rem auto;
+  & h1 {
+    font-weight: bold;
+  }
+}
+.login-signup {
+  margin: auto;
+  display: flex;
+  max-width: 350px;
+  border: 1px solid grey;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.signup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  &__button {
+    background-color: #068545;
+  }
+}
+
+.seperator {
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+}
+.signup__button,
+.login__button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  font-weight: 600;
+  scale: 1;
+  &:hover {
+    scale: 1.05;
+  }
+}
+.signup,
+.login {
+  text-align: center;
+  gap: 1rem;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-button {
+  background-color: #0774d4;
+}

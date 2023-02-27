@@ -1,0 +1,29 @@
+@use "./partials/typography";
+@use "./partials/layout";
+@use "./partials/editPost";
+@use "./partials/loading";
+@use "./partials/comment";
+@use "./partials/form";
+@use "./partials/profile";
+@use "./partials/landing";
+@use "./partials/login";
+@use "./partials/alert";
+@use "./partials/home";
+@use "./partials/nav";
+@use "./partials/profiles";
+@use "./partials/pageNotFound";
+@use "./partials/pagination";
+@use "./partials/card";
+
+* {
+  box-sizing: border-box;
+}
+#root {
+  background-color: #eaedf6;
+  background-color: #e2f1fc;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}

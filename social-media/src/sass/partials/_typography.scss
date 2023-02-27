@@ -1,0 +1,85 @@
+$primary-font: "roboto", Verdana, Geneva, Tahoma, sans-serif;
+$secondary-font: "sofia sans", Verdana, Geneva, Tahoma, sans-serif;
+$tertiary-font: "open sans", Verdana, Geneva, Tahoma, sans-serif;
+button {
+  font-family: "open sans";
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.header-border-bottom {
+  border-bottom: 1px solid black;
+}
+p {
+  font-family: "roboto";
+  margin: 0;
+}
+.alert {
+  font-family: "roboto";
+}
+h1,
+h2 {
+  font-family: $primary-font;
+  color: black;
+}
+
+// Post
+.author-name {
+  font-family: $secondary-font;
+}
+.post-date {
+  font-family: $secondary-font;
+  font-style: italic;
+  color: black;
+  margin-top: 1rem;
+}
+
+.title {
+  margin: 0.5rem;
+}
+.title,
+.card-text {
+  font-family: $primary-font;
+}
+.card-title::first-letter,
+.title::first-letter,
+.tag::first-letter,
+.user-container h2::first-letter,
+.user-container p::first-letter,
+.profile-links::first-letter {
+  text-transform: capitalize;
+}
+.tag {
+  font-family: $secondary-font;
+}
+.comments,
+.reactions {
+  font-family: $primary-font;
+}
+
+// profile
+.user-container h2 {
+  font-family: $primary-font;
+}
+
+.profile-links {
+  font-family: $secondary-font;
+
+  text-decoration: underline;
+}
+
+label {
+  font-family: $secondary-font;
+}
+input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  font-family: $secondary-font;
+}
+
+.text-align-left {
+  text-align: left;
+}

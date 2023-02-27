@@ -1,0 +1,68 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  & a {
+    color: black;
+    font-size: 1.4rem;
+    padding: 0.125rem 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    &:hover {
+      scale: 1.035;
+    }
+  }
+}
+svg {
+  color: #0a9de0;
+}
+.nav-text {
+  display: none;
+  font-size: 0.8rem;
+}
+.small-logo {
+  height: 40px;
+}
+.larger-logo {
+  display: none;
+  max-width: 100px;
+}
+
+.active {
+  background-color: #0a9de0;
+  color: white;
+  & svg,
+  & p {
+    color: white;
+  }
+}
+
+@media (min-width: 850px) {
+  .small-logo {
+    display: none;
+  }
+  .larger-logo {
+    display: block;
+  }
+  nav {
+    width: auto;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  }
+  .nav-text {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+.not-found-image {
+  width: 175px;
+  border-radius: 50%;
+  height: 135px;
+}

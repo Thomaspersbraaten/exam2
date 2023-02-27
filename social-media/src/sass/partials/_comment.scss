@@ -1,0 +1,11 @@
+.comment {
+  border-top: 1px solid grey;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.reply-comment-button {
+  width: 100px;
+}

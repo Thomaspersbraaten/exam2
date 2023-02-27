@@ -1,0 +1,35 @@
+.pagination {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  &__page-number {
+    font-weight: 600;
+  }
+  &__button {
+    border: none;
+    font-weight: bold;
+    width: 80px;
+    height: 38px;
+    border-radius: 7px;
+    &:disabled {
+      opacity: 0.5;
+      background-color: #fff;
+    }
+  }
+}
+.next {
+  background-color: #0a9de0;
+  border: 1px solid #1f90c4;
+  color: white;
+  &:hover {
+    background-color: #1f90c4;
+  }
+}
+.prev {
+  background-color: #fff;
+  border: 1px solid #aeaeae;
+  &:hover {
+    background-color: #f2f4f4;
+  }
+}
